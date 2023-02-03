@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    height: 100vh;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 50%;
+    min-height: 80vh;
+    max-height: 100%;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    color: #fff;
+    background: #222;
+    overflow-y: scroll;
+}
+.card-title{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.todo-input{
+    border: none;
+    padding: 0.9rem;
+    border-radius: 0.6rem;
+    width: 80%;
+}
+.btn{
+    width: 19%;
+    border: none;
+    padding: 0.9rem;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    color: #333;
+    background: rgb(216, 216, 5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    color: #333;
+    background: #fff;
+}
+.li-style{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    border-radius: 0.6rem;
+    padding: 0.5rem 1rem;
+    margin: 1.5rem 0;
+    transition: all 0.3s;
+}
+.li-style .btn{
+    width: 100%;
+    color: red;
+}
+.li-style:hover{
+    background: #111;
+}
+.bg-success{
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    color: #333;
+    background: #ddffdd;
+    border-left: 6px solid seagreen;
+    border-radius: 0.2rem;
+}
+.bg-danger{
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    color: #333;
+    background: #ddffdd;
+    border-left: 6px solid rgb(188, 5, 5);
+    border-radius: 0.2rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .card{
+        width: 100%;
+    }
+    .todo-input{
+        width: 78%;
+    }
+    .btn{
+        font-size: 12px;
+        width: 19%;       
+    }
+    #addTodoButton{
+        padding: 0.9rem 0.5rem;
+    }
+    .li-style .btn{
+        width: 100%;
+    }
+}
